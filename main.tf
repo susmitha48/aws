@@ -23,6 +23,6 @@ terraform {
     key    = "terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "tfstateforgithubactions"
-    profile = "github-profile"
+    profile = ""
   }
 }
