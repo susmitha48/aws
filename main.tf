@@ -5,6 +5,13 @@ terraform {
     }
   }
 }
+terraform {
+  cloud {
+    organization = "shining"
+    workspaces {
+      name = "aws"
+    }
+  }
 provider "aws" {
   region = "ap-south-1"
   access_key = var.AWS_ACCESS_KEY
