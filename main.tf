@@ -18,7 +18,7 @@ provider "aws" {
   access_key = var.AWS_ACCESS_KEY
   secret_key = var.AWS_SECRET_KEY
 }
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "cf-sogeti-s3-us-east-1-tfbackend"
     key    = "terraform.tfstate"
@@ -26,4 +26,4 @@ terraform {
     dynamodb_table = "tfstateforgithubactions"
     profile = ""
   }
-}
+}*/
