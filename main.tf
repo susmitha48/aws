@@ -5,8 +5,6 @@ terraform {
       version = "3.74.2"
     }
   }
-}
-terraform {
   cloud {
     organization = "shining"
     workspaces {
