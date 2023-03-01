@@ -2,6 +2,7 @@
 # Provisioning flags
 ##########################################################
 provision_internet_gw = true
+provision_internet_gw = true
 
 ##########################################################
 # Internet gateway
