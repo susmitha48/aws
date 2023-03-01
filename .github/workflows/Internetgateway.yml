@@ -22,7 +22,7 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: 1.3.8
-          cli_config_credentials_token: ${{ secrets.ghactions }}
+          #cli_config_credentials_token: ${{ secrets.ghactions }}
 
       # - name: Terraform Format
       #   id: fmt
