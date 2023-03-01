@@ -1,7 +1,7 @@
 ##########################################################
 # Provisioning flags
 ##########################################################
-provision_internet_gw = true
+provision_internet_gw = false
 provision_transit_gw  = true
 
 ##########################################################
