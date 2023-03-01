@@ -56,6 +56,7 @@ variable "vpc_id" {
 variable "tags" {
   description = "Name of the internet gateway"
   type        = map(string)
+  default     = {}
 }
 #################################################
 # transit_gateway
