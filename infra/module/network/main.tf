@@ -28,13 +28,14 @@ locals {
 module "aws_vpc" {
   source                           = "../../resources/aws_vpc"
   count                            = local.feature_flags.aws_vpc == true ? 1 : 0
-  vpc_cidr_block 			     = var.vpc_cidr_block
+  vpc_cidr_block 			             = var.vpc_cidr_block
+  vpc_name                         = var.vpc_name
   region                           = var.region
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames
   enable_dns_support               = var.enable_dns_support
   assign_generated_ipv6_cidr_block = var.assign_generated_ipv6_cidr_block
-  tags                             = local.tags
+  #tags                             = local.tags
 }
 
 #--------------------------------------------------------------------
