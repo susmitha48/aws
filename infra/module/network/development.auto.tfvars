@@ -7,6 +7,17 @@ provision_internet_gw = true
 provision_transit_gw  = false
 
 ##########################################################
+# VPC
+##########################################################
+region                           = "us-east-1"
+vpc_name                         = { Name = "cb_vpc" }
+vpc_cidr_block                   = "10.1.0.0/16"
+instance_tenancy                 = "default"
+enable_dns_hostnames             = false
+enable_dns_support               = false
+assign_generated_ipv6_cidr_block = false
+
+##########################################################
 # Internet gateway
 ##########################################################
 #vpc_id = "vpc-084d58c8bf1cdbf57"

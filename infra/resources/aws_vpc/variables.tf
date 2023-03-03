@@ -1,3 +1,7 @@
+variable "vpc_name" {
+  description = "Name of the vpc."
+  type        = map(string)
+}
 variable "region" {
   type        = string
   description = "Region to deploy AWS services"
@@ -7,20 +11,8 @@ variable "vpc_cidr_block" {
   type        = string
   default     = ""
 }
-variable "tags" {
-  description = "Name of the internet gateway"
-  type        = map(string)
-}
 variable "enable_dns_support" {
   description = "A boolean flag to enable/disable DNS support in the VPC. Defaults true."
-  type        = bool
-}
-variable "enable_classiclink" {
-  description = "A boolean flag to enable/disable ClassicLink for the VPC."
-  type        = bool
-}
-variable "enable_classiclink_dns_support" {
-  description = "A boolean flag to enable/disable ClassicLink DNS Support for the VPC."
   type        = bool
 }
 variable "assign_generated_ipv6_cidr_block" {
