@@ -1,5 +1,5 @@
 output "aws_vpc_id" {
-  value       = module.aws_vpc.VPC.id
+  value       = module.aws_vpc.vpc.id
   description = "The aws vpc has been created"
 }
 output "internet_gateway_id" {
