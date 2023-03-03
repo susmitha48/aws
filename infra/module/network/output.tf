@@ -1,5 +1,5 @@
-output "aws_vpc.main.id" {
-  value       = module.aws_vpc.main.id
+output "aws_vpc_id" {
+  value       = module.aws_vpc.VPC.id
   description = "The aws vpc has been created"
 }
 output "internet_gateway_id" {
@@ -8,13 +8,4 @@ output "internet_gateway_id" {
 }
 output "transit_gateway" {
   value = module.transit_gateway.*.aws_transit_gateway
-}
-
-
-
-module "aws_vpc" {
-  source         = "../../resources/aws_vpc"
-  count          = local.feature_flags.aws_vpc == true ? 1 : 0
-  vpc_cidr_block = var.vpc_cidr_block
-  tags           = local.tags
 }
