@@ -1,13 +1,15 @@
 ##########################################################
 # Provisioning flags
 ##########################################################
-provision_internet_gw = false
-provision_transit_gw  = true
+
+provision_aws_vpc     = true
+provision_internet_gw = true
+provision_transit_gw  = false
 
 ##########################################################
 # Internet gateway
 ##########################################################
-vpc_id = "vpc-084d58c8bf1cdbf57"
+#vpc_id = "vpc-084d58c8bf1cdbf57"
 
 ##########################################################
 # TAGs

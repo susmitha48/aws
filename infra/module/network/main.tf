@@ -4,6 +4,8 @@ provider "aws" {
 
 locals {
   feature_flags = {
+
+    provision_aws_vpc     = var.provision_aws_vpc
     provision_internet_gw = var.provision_internet_gw
     provision_transit_gw  = var.provision_transit_gw
   }
@@ -20,12 +22,23 @@ locals {
   }
 }
 #--------------------------------------------------------------------
+#VPC
+#--------------------------------------------------------------------
+
+module "aws_vpc" {
+  source         = "../../resources/aws_vpc"
+  count          = local.feature_flags.aws_vpc == true ? 1 : 0
+  vpc_cidr_block = var.vpc_cidr_block
+  tags           = local.tags
+}
+
+#--------------------------------------------------------------------
 # Internet Gateway
 #--------------------------------------------------------------------
 module "aws_internet_gateway" {
   source = "../../resources/Internetgateway"
   count  = local.feature_flags.provision_internet_gw == true ? 1 : 0
-  vpc_id = var.vpc_id
+  vpc_id = module.aws_vpc.id
   tags   = local.tags
 }
 

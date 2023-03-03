@@ -1,3 +1,8 @@
+variable "provision_aws_vpc" {
+  type        = bool
+  default     = false
+  description = "If aws vpc should be provisioned or not?"
+}
 variable "provision_internet_gw" {
   type        = bool
   default     = false
@@ -8,6 +13,7 @@ variable "provision_transit_gw" {
   default     = false
   description = "If AWS transit gateway should be provisioned or not?"
 }
+
 ###################################################
 # TAGs
 ###################################################
@@ -44,15 +50,22 @@ variable "data_classification" {
 variable "contact" {
   type = string
 }
-
+###################################################
+#VPC
+###################################################
+variable "vpc_cidr_block" {
+  description = "CIDR block for VPC"
+  type        = string
+  default     = "10.1.0.0/16"
+}
 ###################################################
 # Internet gateway
 ###################################################
-variable "vpc_id" {
+/*variable "vpc_id" {
   description = "The ID of the VPC"
   type        = string
   default     = ""
-}
+}*/
 variable "tags" {
   description = "Name of the internet gateway"
   type        = map(string)
