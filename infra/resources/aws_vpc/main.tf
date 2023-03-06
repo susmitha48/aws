@@ -1,5 +1,5 @@
 resource "aws_vpc" "main" {
-  tags                             = var.vpc_name
+  tags                             = var.tags
   cidr_block                       = var.vpc_cidr_block
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames
