@@ -1,8 +1,3 @@
-variable "provision_aws_vpc" {
-  type        = bool
-  default     = false
-  description = "If aws vpc should be provisioned or not?"
-}
 variable "provision_internet_gw" {
   type        = bool
   default     = false
@@ -57,10 +52,6 @@ variable "region" {
   type        = string
   description = "Region to deploy AWS services"
 }
-variable "vpc_name" {
-  description = "Name of the vpc."
-  type        = map(string)
-}
 variable "vpc_cidr_block" {
   description = "CIDR block for VPC"
   type        = string
@@ -84,11 +75,6 @@ variable "enable_dns_hostnames" {
 ###################################################
 # Internet gateway
 ###################################################
-/*variable "vpc_id" {
-  description = "The ID of the VPC"
-  type        = string
-  default     = ""
-}*/
 variable "tags" {
   description = "Name of the internet gateway"
   type        = map(string)
