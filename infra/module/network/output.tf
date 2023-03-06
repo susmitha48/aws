@@ -1,6 +1,6 @@
-output "vpc" {
-  value       = module.aws_vpc
-  description = "The aws vpc has been created"
+output "id" {
+  value       = module.aws_vpc.id
+  description = "The ID of the aws vpc"
 }
 output "internet_gateway_id" {
   value       = module.aws_internet_gateway.*.internet_gateway_id
