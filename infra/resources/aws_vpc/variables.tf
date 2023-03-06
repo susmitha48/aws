@@ -1,6 +1,7 @@
-variable "vpc_name" {
-  description = "Name of the vpc."
+variable "tags" {
+  description = "Name of the internet gateway"
   type        = map(string)
+  default     = {}
 }
 variable "region" {
   type        = string
