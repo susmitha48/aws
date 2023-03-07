@@ -5,7 +5,7 @@ provider "aws" {
 locals {
   feature_flags = {
     
-    provision_internet_gw  = var.provision_internet_gw
+    provision_internet_gw    = var.provision_internet_gw
     provision_transit_gw   = var.provision_transit_gw
     provision_bastion_host = var.provision_bastion_host
   }
