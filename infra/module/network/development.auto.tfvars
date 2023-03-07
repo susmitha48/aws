@@ -36,5 +36,5 @@ contact               = "mahesh.jadhav@capgemini.com"
 ###########################################################
 ami           = "ami-0aa7d40eeae50c9a9"
 instance_type = "t2.micro"
-key_name      = "bastion_keypair"
+key_name      = "bastionkeypair"
 subnet_id     = "subnet-0062d2ab235491480"
