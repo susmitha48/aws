@@ -2,8 +2,9 @@
 # Provisioning flags
 ##########################################################
 
-provision_internet_gw = true
+provision_internet_gw = false
 provision_transit_gw  = false
+provision_bastionhost = true
 
 ##########################################################
 # VPC
@@ -29,3 +30,11 @@ environment           = "Dev"
 environment_short     = "d"
 owner_name            = "jayanto.mukherjee@capgemini.com"
 contact               = "mahesh.jadhav@capgemini.com"
+
+###########################################################
+# Bastion Host
+###########################################################
+ami           = "ami-0aa7d40eeae50c9a9"
+instance_type = "t2.micro"
+key_name      = "bastion_keypair"
+subnet_id     = "subnet-014b0b2a9b558001c"

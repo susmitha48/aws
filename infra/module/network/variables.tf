@@ -8,6 +8,11 @@ variable "provision_transit_gw" {
   default     = false
   description = "If AWS transit gateway should be provisioned or not?"
 }
+variable "provision_bastion_host" {
+  type        = bool
+  default     = false
+  description = "If aws bastion host should be provisioned or not?"
+}
 
 ###################################################
 # TAGs
@@ -107,4 +112,27 @@ variable "vpn_ecmp_support" {
   type        = string
   description = "Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: disable, enable. Default value: enable."
   default     = "enable"
+}
+###################################################
+# Bastion host
+###################################################
+variable "subnet_id" {
+  description = "The VPC Subnet ID to launch in."
+  type        = string
+  default     = ""
+}
+variable "key_name" {
+  description = "The key name of the Key Pair to use for the instance."
+  type        = string
+  default     = ""
+}
+variable "ami" {
+  type        = string
+  description = " AMI to use for the instance. Required unless launch_template is specified and the Launch Template specifes an AMI. If an AMI is specified in the Launch Template, setting ami will override the AMI specified in the Launch Template."
+  default     = ""
+}
+variable "instance_type" {
+  description = "The type of instance to start."
+  type        = string
+  default     = ""
 }
