@@ -5,7 +5,7 @@ provider "aws" {
 locals {
   feature_flags = {
     
-    provision_internet_gw  = var.provision_internet_gw
+    provision_internet_gw    = var.provision_internet_gw
     provision_transit_gw   = var.provision_transit_gw
     provision_bastion_host = var.provision_bastion_host
   }
@@ -27,7 +27,7 @@ locals {
 
 module "aws_vpc" {
   source                           = "../../resources/aws_vpc"
-  vpc_cidr_block 			     = var.vpc_cidr_block
+  vpc_cidr_block 			             = var.vpc_cidr_block
   region                           = var.region
   instance_tenancy                 = var.instance_tenancy
   enable_dns_hostnames             = var.enable_dns_hostnames

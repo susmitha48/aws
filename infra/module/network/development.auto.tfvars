@@ -2,9 +2,9 @@
 # Provisioning flags
 ##########################################################
 
-provision_internet_gw = false
-provision_transit_gw  = false
-provision_bastionhost = true
+provision_internet_gw  = false
+provision_transit_gw   = false
+provision_bastion_host = true
 
 ##########################################################
 # VPC
@@ -36,5 +36,5 @@ contact               = "mahesh.jadhav@capgemini.com"
 ###########################################################
 ami           = "ami-0aa7d40eeae50c9a9"
 instance_type = "t2.micro"
-key_name      = "bastion_keypair"
-subnet_id     = "subnet-014b0b2a9b558001c"
+key_name      = "bastionkeypair"
+subnet_id     = "subnet-0062d2ab235491480"
