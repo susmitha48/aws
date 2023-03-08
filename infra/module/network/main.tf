@@ -7,7 +7,7 @@ locals {
     
     provision_internet_gw    = var.provision_internet_gw
     provision_transit_gw   = var.provision_transit_gw
-    provision_bastion_host = var.provision_bastion_host
+#   provision_bastion_host = var.provision_bastion_host
   }
   tags = {
     Customer           = var.customer
@@ -62,7 +62,7 @@ module   "transit_gateway" {
 #-------------------------------------------------------------------
 #Bastion Host
 #-------------------------------------------------------------------
-module "bastion_host" {
+/*module "bastion_host" {
   source        = "../../resources/bastion_host"
   count         = local.feature_flags.provision_bastion_host == true ? 1 : 0
   ami           = var.ami
@@ -70,4 +70,4 @@ module "bastion_host" {
   key_name      = var.key_name
   subnet_id     = var.subnet_id
   tags          = local.tags
-}
+}*/

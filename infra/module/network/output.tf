@@ -9,6 +9,6 @@ output "internet_gateway_id" {
 output "transit_gateway" {
   value = module.transit_gateway.*.aws_transit_gateway
 }
-output "bastion" {
+/*output "bastion" {
   value = module.bastion_host
-} 
+}*/ 

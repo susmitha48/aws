@@ -4,7 +4,7 @@
 
 provision_internet_gw  = false
 provision_transit_gw   = false
-provision_bastion_host = true
+#provision_bastion_host = true
 
 ##########################################################
 # VPC
@@ -34,7 +34,7 @@ contact               = "mahesh.jadhav@capgemini.com"
 ###########################################################
 # Bastion Host
 ###########################################################
-ami           = "ami-0aa7d40eeae50c9a9"
+/*ami           = "ami-0aa7d40eeae50c9a9"
 instance_type = "t2.micro"
 key_name      = "bastionkeypair"
-subnet_id     = "subnet-0062d2ab235491480"
+subnet_id     = "subnet-0062d2ab235491480"*/

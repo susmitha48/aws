@@ -8,11 +8,11 @@ variable "provision_transit_gw" {
   default     = false
   description = "If AWS transit gateway should be provisioned or not?"
 }
-variable "provision_bastion_host" {
+/*variable "provision_bastion_host" {
   type        = bool
   default     = false
   description = "If aws bastion host should be provisioned or not?"
-}
+}*/
 
 ###################################################
 # TAGs
@@ -116,7 +116,7 @@ variable "vpn_ecmp_support" {
 ###################################################
 # Bastion host
 ###################################################
-variable "subnet_id" {
+/*variable "subnet_id" {
   description = "The VPC Subnet ID to launch in."
   type        = string
   default     = ""
@@ -135,4 +135,4 @@ variable "instance_type" {
   description = "The type of instance to start."
   type        = string
   default     = ""
-}
+}*/
