@@ -21,12 +21,12 @@ assign_generated_ipv6_cidr_block = false
 ##########################################################
 customer              = "org"
 category              = "core" #platform, core, app
-business_unit         = "OneDeliver"
+business_unit         = "cloudboost"
 applicationname       = "CloudFoundationLZ"
 applicationname_short = "cf"
 data_classification   = "Private"
 approver_name         = "amarjeet.c.singh@capgemini.com"
-environment           = "Dev"
+environment           = "prod"
 environment_short     = "d"
 owner_name            = "jayanto.mukherjee@capgemini.com"
 contact               = "mahesh.jadhav@capgemini.com"
