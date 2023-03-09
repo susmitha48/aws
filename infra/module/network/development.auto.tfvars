@@ -21,7 +21,7 @@ assign_generated_ipv6_cidr_block = false
 ##########################################################
 customer              = "org"
 category              = "core" #platform, core, app
-business_unit         = "OneDeliver"
+business_unit         = "cloudboost"
 applicationname       = "CloudFoundationLZ"
 applicationname_short = "cf"
 data_classification   = "Private"
