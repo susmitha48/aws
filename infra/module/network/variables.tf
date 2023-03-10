@@ -8,11 +8,6 @@ variable "provision_transit_gw" {
   default     = false
   description = "If AWS transit gateway should be provisioned or not?"
 }
-/*variable "provision_bastion_host" {
-  type        = bool
-  default     = false
-  description = "If aws bastion host should be provisioned or not?"
-}*/
 
 ###################################################
 # TAGs
