@@ -1,6 +1,12 @@
 name: "Terraform"
 
 on:
+<<<<<<< HEAD:.github/workflows/network-plan.yml
+=======
+  push:
+    branches:
+      - feature/test
+>>>>>>> 9b714ccb38dcebb6517747924ac556ed63b73327:.github/workflows/network.yml
   pull_request:
     branches:
       - feature/test
