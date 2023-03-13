@@ -3,7 +3,7 @@ name: "Terraform"
 on:
   pull_request:
     branches:
-      - feature/test
+      - 'feature/test'
   
 jobs:
   terraform_plan:
