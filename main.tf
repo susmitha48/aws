@@ -19,7 +19,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "cf-sogeti-s3-us-east-1-tfbackend"
+    bucket = "backend"
     key    = "terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "tfstateforgithubactions"
