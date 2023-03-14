@@ -19,7 +19,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "backend"
+    bucket = "cfbackend"
     key    = "terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "tfstateforgithubactions"
